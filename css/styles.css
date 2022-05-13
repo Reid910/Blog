@@ -1,52 +1,69 @@
 #navigation {
+    z-index: 5;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     background-color: rgb(30,30,30);
     border-bottom: solid;
-    border-width: 5px;
-    border-color: rgb(100, 100, 100);
-    padding: 5px 20px;
+    border-width: 10px;
+    border-color: rgb(71, 7, 145);
+    padding: 15px 50px; 
+    position: fixed;
+    width: 100%;
+    white-space: nowrap;
 }
 
 #navigation a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
     color: rgb(179, 138, 255);
     background-color: rgb(37, 14, 37);
-    text-decoration: none;
-    padding: 7px;
+    padding: 5px;
     transition: color 0.3s, background-color 0.5s, border-color 3s;
     border-style: solid;
-    border-bottom: 3px dashed rgb(0, 0, 0);
-    border-color: black;
+    border-color: rgb(83, 49, 146);
+    text-align: center;
 }
 
 #navigation a:hover {
     color: rgb(255, 255, 255);;
     background-color: rgb(71, 7, 145);
-    border-color: rgb(132, 0, 255);
+    border-color: rgb(152, 43, 255);
+    font-weight: bold;
 }
 
-#backgroundvideo {
-    object-fit: fill;
-    z-index: -1;
-    height: 180%;
-    min-width: 100%;
-    position: fixed;
+.Middle_frame {
+    background-color: white;
+    min-height: 100vh auto;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    display: grid;
+    grid-row: auto;
 }
 
-#videosource {
-    position: fixed;
+.Grid_border {
+    padding: 20px;
     width: 100%;
-    padding: 10px;
-    bottom: 0;
-    background-color: rgb(30,30,30);
-    border-style: solid;
-    border-width: 0;
-    border-top-width: thick;
-    border-color: rgb(100, 100, 100);
-    color: rgb(255, 255, 255);
-    text-align: right;
 }
 
-#videosource a {
-    color: rgb(179, 138, 255);
+.page_content_div {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+}
+
+.content_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    padding: 5px 0px;
+}
+
+#testing_border {
+    border: 2px;
+    border-style: solid;
+    border-color: black;  
 }

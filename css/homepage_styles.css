@@ -5,8 +5,7 @@ ol {
 #navigation {
     height: 50vh;
     display: inline-block;
-    padding-bottom: 100px;
-    margin: 0px 0px 0px 1em;
+    margin: 10px 0px 0px 1em;
 }
 
 ol {
@@ -14,7 +13,7 @@ ol {
 }
 
 ol li{
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 #navigation a {
@@ -31,6 +30,7 @@ ol li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35px;
     font-style: italic;
+    white-space: nowrap;
     padding: 20px;
 }
 
@@ -66,7 +66,7 @@ ol li{
 
 #split_grid {
     display: grid;
-    grid-template-columns: 0.35fr 1fr;
+    grid-template-columns: 0.45fr 1fr;
 }
 
 #videosource a {
@@ -93,8 +93,16 @@ ol li{
     min-height: 85vh;
 }
 
+#right_text p {
+    padding-bottom: 5px;
+}
+
+#right_text P:hover {
+    color: rgb(178, 95, 255);
+}
+
 .blog_entry {
-    margin-top: 5px;
+    margin-bottom: 25px;
     padding: 5px;
     outline: rgb(124, 44, 170) inset 1px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -102,7 +110,7 @@ ol li{
 
 #blog_entry_title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(178, 95, 255);
 }
