@@ -26,12 +26,12 @@ ol li{
     border-right: solid;
     border-color: rgb(17, 6, 49);
     border-width: 10px;
+    padding: 20px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35px;
     font-style: italic;
     white-space: nowrap;
-    padding: 20px;
 }
 
 #navigation a:hover {
@@ -102,7 +102,7 @@ ol li{
 }
 
 .blog_entry {
-    margin-bottom: 25px;
+    margin-bottom: 1cm;
     padding: 5px;
     outline: rgb(124, 44, 170) inset 1px;
     background-color: rgba(0, 0, 0, 0.7);
