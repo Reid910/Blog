@@ -2,11 +2,9 @@
     z-index: 5;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    background-color: rgb(30,30,30);
     border-bottom: solid;
     border-width: 10px;
     border-color: rgb(71, 7, 145);
-    padding: 15px 50px; 
     position: fixed;
     width: 100%;
     white-space: nowrap;
@@ -17,11 +15,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: rgb(179, 138, 255);
-    background-color: rgb(37, 14, 37);
-    padding: 5px;
-    transition: color 0.3s, background-color 0.5s, border-color 3s;
-    border-style: solid;
+    background-color: rgb(29, 5, 49);
+    padding: 15px;
+    transition: color 0.3s, background-color 0.5s, border-color 1s;
+    border-bottom-style: solid;
     border-color: rgb(83, 49, 146);
+    border-width: 4px;
     text-align: center;
 }
 
@@ -69,11 +68,24 @@
 }
 
 .Images {
-    padding: 15px;
+    padding: 10px;
     object-fit: scale-down;
-    width: 100%;
-    max-height: 90%;
-    position: relative;
-    margin: 0 auto;
-    top: 10%;
+    max-height: 400px;
+}
+
+#pad {
+    padding: 10px 50px;
+}
+
+#img_float_right {
+    width: 30%;
+    float: right;
+}
+
+#img_float_left {
+    float: left;
+}
+
+#maze {
+    width: 35%;
 }

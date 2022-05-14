@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body style="background: rgb(16, 0, 22);">
+    <nav id="navigation">
+        <a href="index.html">Homepage</a>
+        <a href="rblx.html">Rblx</a>
+        <a href="#" style="text-decoration: underline;">Back to top</a>
+        <a href="unity.html">Unity</a>
+        <a href="ai-page.html">AI</a>
+        <a href="videogames.html">Video games</a>
+        <a href="vr-page.html">VR</a>
+        <a href="aboutme.html">About me</a>
+    </nav>
+    <div>
+        <div class="Middle_frame">
+
+            <div id="pad"> <!-- Date of publish -->
+                <p class="content_text"><b>Bezier Curve</b></p>
+                <p class="content_text" style="font-weight: italic;">5/13/2020</p>
+            </div>
+
+            <div id="pad">
+                <p class="content_text">&emsp;
+                    Bezier Curves are very cool and id like to show you how it works!
+                </p>
+                <p class="content_text">
+                    First we need to understand how Vectors work because I am going to make it in a 3d space.
+                    The easiest way to think about a Vector is that its from point <b>a</b> to <b>b</b>.
+                    <img class="Images" id="img_float_right" src="images/XYZ.jpg">
+                </p>
+            </div>
+
+            <div id="pad">
+                <p class="content_text">&emsp;
+                    This image on the right represents X, Y, Z axis.
+                    Basically if three lines were to stick to a Unique axis they could represent any point in a 3d space
+                    just by changing the lines lengths. A 3-Dimensonal Vector uses x, y, and z to make up a position in a 3d space.
+                </p>
+            </div>
+
+            <div id="pad">
+                <p class="content_text">
+                    A cool thing you can do with these Vectors is move between them. For example I could go 50% between Vector a and b.
+                    In my code I call this a "Lerp" its like a transition between two points and the transition can be anywhere between 0-1 one being 100%.
+                </p>
+                <p class="content_text">
+                    Heres a little code example:
+                </p>
+                <img class="Image" src="images/LerpExample.jpg" style="width: 70%;">
+            </div>
+            
+            <div id="pad">
+                <p class="content_text">
+                    Okay I know its getting a little complicated and maybe your taking a while to understand, but we can also lerp twice:
+                </p>
+                <img class="Image" src="images/DoubleLerpEX.jpg" style="width: 70%;">
+            </div>
+
+            <div id="pad">
+                <p class="content_text">
+                    Okay a little more! the reason I changed the lerp percent to a varible is because a Bezier Curve is Lerps over time.
+                    The last step to make a Bezier Curve is making lerps over time while changing the lerp percent to in a way record a Curve!
+                    Im going to use the same positions and over one second place a small block at each final lerp position.
+                </p>
+                <p class="content_text">
+                    Heres what we made:
+                </p>
+                <img class="Image" src="images/BezierCurveExample.jpg" style="width: 40%;">
+                <p class="content_text">
+                    Heres the code and an explanation underneath:
+                </p>
+                <img class="Image" src="images/BezierCode.jpg" style="width: 100%;">
+                <p class="content_text">
+                    If you need to ignore the bottom half under "local done = false"
+                </p>
+                <p class="content_text">
+                    Inside this lerp_to_position function that was called every frame for a second we made a part and placed it at the lerped point.
+                    as time went by Time_var increased increasing the lerp amount and getting closer to the end goal.
+                </p>
+            </div>
+
+            <div id="pad">
+                <p class="content_text">
+                    Made this one for fun:
+                </p>
+                <img class="Image" src="images/ExperimentBezier.jpg" style="width: 60%;">
+                <p class="content_text">
+                    Positions if you want it:
+                </p>
+                <img class="Image" src="images/BezierPositions.jpg" style="width: 100%;">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
